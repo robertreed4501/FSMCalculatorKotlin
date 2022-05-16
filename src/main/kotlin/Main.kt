@@ -4,7 +4,7 @@ fun main() {
     State.calculate = CalculateState()
     State.current = State.operand
 
-    val statement = "39 + 44 / 2.48 - -12 + 4 * 10 = "
+    val statement = "40 + 5 + 23 - 16 + 2 - 3 * 5 = "
     var index = 0
     while (State.current !== State.calculate) {
         index = State.current!!.read(statement, index)
